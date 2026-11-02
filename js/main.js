@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </svg>
             <span>Copied!</span>
           `;
-          btn.style.color = 'var(--accent)';
+          btn.style.color = 'var(--color-success)';
 
           setTimeout(() => {
             btn.innerHTML = originalHTML;

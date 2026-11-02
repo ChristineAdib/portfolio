@@ -2,7 +2,7 @@
 
 A minimal, elegant, modern, and fully responsive personal portfolio website for **Christine Adib**, Full-Stack .NET & Angular Developer.
 
-Designed and built with Vanilla **HTML5, CSS3, and JavaScript** following a clean, architectural aesthetic: warm off-white tones, deep charcoal typography, muted slate blue accents, and generous whitespace.
+Designed and built with Vanilla **HTML5, CSS3, and JavaScript** following a luxurious, warm, elegant beige and earthy aesthetic: primary white (`#FFFFFF`), warm section beige (`#FAF7F2`), card tone (`#F1E3D5`), rich title brown (`#8B5E3C`), and primary accents (`#C9A78A`, `#A4785A`).
 
 ---
 
@@ -47,19 +47,22 @@ InternTasks/
 
 ---
 
-## 🎨 Design System
+## 🎨 Design System & Color Palette
 
-| Token | Value | Description |
+The portfolio strictly adheres to a luxurious, warm, elegant beige and earthy aesthetic:
+
+| Token | HEX Code | Role & Usage |
 | :--- | :--- | :--- |
-| **Background Primary** | `#F8F8F5` | Warm off-white |
-| **Card Surface** | `#FFFFFF` | Crisp pure white |
-| **Subtle Tint** | `#F1F1EC` | Muted backgrounds / tags |
-| **Text Primary** | `#24282D` | Deep charcoal |
-| **Text Secondary** | `#737982` | Muted gray |
-| **Accent Tone** | `#587B94` | Elegant muted blue |
-| **Accent Subtle** | `rgba(88, 123, 148, 0.1)` | Subtle pill background |
-| **Border Color** | `#E6E6E1` | Very light gray border |
-| **Typography** | `Inter`, `Manrope` | Modern, clean sans-serif |
+| **Primary Background** | `#FFFFFF` | Main background surface |
+| **Section Background** | `#FAF7F2` | Alternative section backdrops (Hero, Skills, Experience, Contact) |
+| **Card Background** | `#F1E3D5` | Project cards, skill cards, brand card, containers |
+| **Borders & Dividers** | `#D9C3A8` | Clean lines, subtle borders, card frames |
+| **Primary Accent** | `#C9A78A` | Interactive buttons, active tabs, highlight badges |
+| **Hover Accent** | `#A4785A` | Button hover states, interactive link transitions |
+| **Title Text** | `#8B5E3C` | Main headings, brand monogram, prominent text |
+| **Body Text** | `#A89B8E` / `#544033` | Paragraphs, meta descriptions, form labels |
+| **Success / Positive** | `#7A9E7E` | Availability indicator pulse, completed status badges |
+| **Typography** | `Inter`, `Manrope` | Modern, readable, elegant sans-serif |
 
 ---
 
