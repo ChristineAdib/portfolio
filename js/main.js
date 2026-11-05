@@ -10,13 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.querySelector('.nav-menu');
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
-  const themeToggle = document.getElementById('theme-toggle');
   const contactForm = document.getElementById('contact-form');
   const formStatus = document.getElementById('form-status');
-  const backToTopBtn = document.getElementById('back-to-top');
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const skillCards = document.querySelectorAll('.skill-category-card');
-  const copyButtons = document.querySelectorAll('.btn-copy');
+  const toggleFormBtn = document.getElementById('toggle-form-btn');
+  const contactDrawer = document.getElementById('contact-drawer');
   const copyrightYear = document.getElementById('copyright-year');
 
   // Set current copyright year
@@ -104,69 +101,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach((section) => navObserver.observe(section));
 
-  // --- Skills Filter Tabs ---
-  if (filterButtons.length > 0 && skillCards.length > 0) {
-    filterButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        // Toggle active button
-        filterButtons.forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const filterValue = btn.getAttribute('data-filter');
-
-        skillCards.forEach((card) => {
-          const category = card.getAttribute('data-category');
-          if (filterValue === 'all' || category === filterValue) {
-            card.style.display = 'flex';
-            card.style.animation = 'fadeIn 0.3s ease forwards';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  }
-
-  // --- Copy to Clipboard Interactions ---
-  if (copyButtons.length > 0) {
-    copyButtons.forEach((btn) => {
-      btn.addEventListener('click', async () => {
-        const textToCopy = btn.getAttribute('data-copy');
-        if (!textToCopy) return;
-
-        try {
-          await navigator.clipboard.writeText(textToCopy);
-          const originalHTML = btn.innerHTML;
-          btn.innerHTML = `
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <span>Copied!</span>
-          `;
-          btn.style.color = 'var(--color-success)';
-
-          setTimeout(() => {
-            btn.innerHTML = originalHTML;
-            btn.style.color = '';
-          }, 2200);
-        } catch (err) {
-          // Fallback if clipboard API is blocked
-          const textarea = document.createElement('textarea');
-          textarea.value = textToCopy;
-          textarea.style.position = 'fixed';
-          textarea.style.opacity = '0';
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand('copy');
-          document.body.removeChild(textarea);
-
-          const originalHTML = btn.innerHTML;
-          btn.innerHTML = `<span>Copied!</span>`;
-          setTimeout(() => {
-            btn.innerHTML = originalHTML;
-          }, 2200);
-        }
-      });
+  // --- Toggle Contact Message Drawer ---
+  if (toggleFormBtn && contactDrawer) {
+    toggleFormBtn.addEventListener('click', () => {
+      const isOpen = contactDrawer.classList.toggle('is-open');
+      if (isOpen) {
+        toggleFormBtn.querySelector('span').textContent = 'Close Form';
+        const nameInput = document.getElementById('user-name');
+        if (nameInput) setTimeout(() => nameInput.focus(), 150);
+      } else {
+        toggleFormBtn.querySelector('span').textContent = 'Get In Touch';
+      }
     });
   }
 
@@ -186,20 +131,24 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = messageInput.value.trim();
 
       // Reset status banner
-      formStatus.className = 'form-status-banner';
+      formStatus.className = 'form-status-msg';
       formStatus.textContent = '';
 
       // Validation
       if (!name || !email || !subject || !message) {
-        formStatus.classList.add('is-active', 'error');
-        formStatus.textContent = 'Please fill out all required fields before submitting.';
+        formStatus.classList.add('active');
+        formStatus.style.backgroundColor = 'rgba(217, 83, 79, 0.35)';
+        formStatus.style.borderColor = '#d9534f';
+        formStatus.textContent = 'Please fill out all fields before sending.';
         return;
       }
 
       // Email format regex
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
-        formStatus.classList.add('is-active', 'error');
+        formStatus.classList.add('active');
+        formStatus.style.backgroundColor = 'rgba(217, 83, 79, 0.35)';
+        formStatus.style.borderColor = '#d9534f';
         formStatus.textContent = 'Please provide a valid email address.';
         emailInput.focus();
         return;
@@ -209,50 +158,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const recipient = 'christineadib8@gmail.com';
       const formattedSubject = encodeURIComponent(`[Portfolio Inquiry] ${subject}`);
       const formattedBody = encodeURIComponent(
-        `Hi Christine,\n\n${message}\n\n---\nSender: ${name}\nEmail: ${email}`
+        `Hi Christine,\n\n${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
       );
       const mailtoUrl = `mailto:${recipient}?subject=${formattedSubject}&body=${formattedBody}`;
 
       // Inform user and trigger mail client
-      formStatus.classList.add('is-active', 'info');
+      formStatus.classList.add('active');
+      formStatus.style.backgroundColor = 'rgba(255, 255, 255, 0.18)';
+      formStatus.style.borderColor = 'rgba(255, 255, 255, 0.4)';
       formStatus.innerHTML = `
         <strong>Opening your email client...</strong><br>
-        Preparing your draft to <em>${recipient}</em>. If your email app did not open automatically,
-        <a href="${mailtoUrl}" style="text-decoration: underline; font-weight: 600;">click here to launch it</a> or copy my email directly.
+        Preparing your draft to <em>${recipient}</em>.
+        <a href="${mailtoUrl}" style="text-decoration: underline; font-weight: 700; color: #FFFFFF;">Click here if your mail app didn't open</a>.
       `;
 
       // Trigger mailto link
       window.location.href = mailtoUrl;
-    });
-  }
-
-  // --- Dark / Light Theme Toggle ---
-  if (themeToggle) {
-    // Check saved preference or system preference
-    const savedTheme = localStorage.getItem('ca-theme');
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', nextTheme);
-      localStorage.setItem('ca-theme', nextTheme);
-    });
-  }
-
-  // --- Back to Top Smooth Scroll ---
-  if (backToTopBtn) {
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
     });
   }
 });

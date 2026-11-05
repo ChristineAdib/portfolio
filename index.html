@@ -1,49 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christine Adib | Full-Stack .NET &amp; Angular Developer</title>
-  <meta name="description" content="Personal portfolio of Christine Adib, a Full-Stack .NET &amp; Angular Developer specializing in ASP.NET Core, Angular 20, Clean Architecture, and real-time distributed web systems.">
+  <meta name="description" content="Personal portfolio of Christine Adib, Full-Stack .NET &amp; Angular Developer. Explore projects, skills, leadership experience, and technical accomplishments.">
   <meta name="author" content="Christine Adib">
-  
+
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Christine Adib | Full-Stack .NET &amp; Angular Developer">
-  <meta property="og:description" content="Explore projects, skills, leadership experience, and technical accomplishments of Christine Adib.">
+  <meta property="og:title" content="Christine Adib | Full-Stack Developer">
+  <meta property="og:description" content="A passionate Full-Stack Developer, turning ideas into powerful and user-friendly web applications.">
   <meta property="og:locale" content="en_US">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <!-- Google Fonts: Inter & Manrope -->
+  <!-- Google Fonts: Playfair Display, Caveat, Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Skip to Main Content Link for Accessibility -->
+  <!-- Accessibility Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- ==========================================================================
-       Header & Navigation
+       Header & Navigation (Exact CA+ Monogram & Nav Bar)
        ========================================================================== -->
   <header class="site-header" role="banner">
     <div class="container nav-container">
-      <!-- Monogram Brand Logo -->
-      <a href="#home" class="brand-link" aria-label="Christine Adib Home">
-        <div class="brand-monogram">CA</div>
+      
+      <!-- Brand: CA+ Monogram & Name -->
+      <a href="#home" class="brand-link" aria-label="Christine Adib - Home">
+        <div class="brand-monogram-box">
+          <span class="brand-monogram-text">CA</span>
+          <span class="brand-sparkle-star">✦</span>
+        </div>
+        <div class="brand-divider" aria-hidden="true"></div>
         <div class="brand-info">
           <span class="brand-name">Christine Adib</span>
           <span class="brand-role">Full-Stack Developer</span>
         </div>
       </a>
 
-      <!-- Desktop & Mobile Navigation Links -->
+      <!-- Navigation Menu -->
       <nav class="nav-menu" id="primary-navigation" aria-label="Main Navigation">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About</a>
@@ -54,10 +59,14 @@
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
-      <!-- Header Actions: Quick CTA -->
+      <!-- Header Action: Let's Talk CTA & Mobile Toggle -->
       <div class="header-actions">
-        <a href="#contact" class="btn-nav">
-          <span>Get in Touch</span>
+        <a href="#contact" class="btn-lets-talk">
+          <span>Let's Talk</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
         </a>
 
         <!-- Mobile Menu Toggle Button -->
@@ -67,6 +76,7 @@
           <span></span>
         </button>
       </div>
+
     </div>
   </header>
 
@@ -76,931 +86,826 @@
   <main id="main-content">
 
     <!-- ========================================================================
-         Hero / Home Section
+         Hero / Home Section (Matching Exact Narrative + Right Arch Mockup)
          ======================================================================== -->
     <section id="home" class="section hero-section" aria-labelledby="hero-title">
+      
+      <!-- Decorative Botanical Leaves on Left Boundary -->
+      <svg class="page-leaf-left" viewBox="0 0 100 200" fill="none" aria-hidden="true">
+        <path d="M-10 180 C20 160, 40 120, 30 80 C20 40, -10 20, -20 10" stroke="#3C5C4B" stroke-width="2.5" fill="none"/>
+        <path d="M5 145 C25 140, 45 130, 40 115 C35 100, 15 110, 5 125 Z" fill="#2E4F3E"/>
+        <path d="M18 105 C38 95, 50 75, 42 62 C34 50, 20 68, 12 85 Z" fill="#4B6E59"/>
+        <path d="M-5 75 C10 65, 30 45, 25 32 C18 20, 2 35, -8 50 Z" fill="#3C5C4B"/>
+      </svg>
+
       <div class="container hero-grid">
         
         <!-- Left Hero Content -->
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="pulse-dot"></span>
-            <span>Available for Full-Stack Opportunities</span>
+          
+          <!-- Handwritten Greeting with Flourish -->
+          <div class="hero-greeting-box">
+            <span class="hero-script-greeting">Hello, I'm</span>
+            <!-- Sunburst decorative SVG -->
+            <svg class="sunburst-flourish" viewBox="0 0 40 30" fill="none" aria-hidden="true">
+              <path d="M2 24 C14 18, 28 17, 38 18" stroke="#C47A53" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M18 10 L22 2" stroke="#C47A53" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M28 12 L34 5" stroke="#C47A53" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M34 20 L40 16" stroke="#C47A53" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
           </div>
 
-          <p class="hero-intro">Hi, I'm Christine Adib.</p>
-          <h1 id="hero-title" class="hero-title">Full-Stack .NET &amp; Angular Developer</h1>
+          <!-- Main Heading -->
+          <h1 id="hero-title" class="hero-name">Christine Adib</h1>
 
+          <!-- Tagline with Dots -->
+          <div class="hero-tagline">
+            <span>Build</span>
+            <span class="dot">•</span>
+            <span>Solve</span>
+            <span class="dot">•</span>
+            <span>Grow</span>
+          </div>
+
+          <!-- Supporting Description -->
           <p class="hero-description">
-            I enjoy turning ideas into practical web applications, building reliable solutions, and taking ownership of projects from the initial idea to the final result.
+            A passionate Full-Stack Developer, turning ideas into powerful and user-friendly web applications.
           </p>
 
+          <!-- Main CTAs -->
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">
-              <span>View My Projects</span>
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <a href="#projects" class="btn-hero-primary">
+              <span>Explore My Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span>Let's Connect</span>
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+            <a href="#contact" class="btn-hero-secondary">
+              <span>Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
               </svg>
             </a>
           </div>
 
-          <!-- Hero Quick Socials -->
-          <div class="hero-socials">
-            <span class="hero-social-label">Connect:</span>
-            <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Christine Adib GitHub Profile">
+          <!-- Social Icon Pills -->
+          <div class="hero-social-pills">
+            <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" class="social-circle-pill" aria-label="Christine Adib GitHub Profile">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
               </svg>
             </a>
-            <a href="https://linkedin.com/in/christine-adib-82bb03282" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Christine Adib LinkedIn Profile">
+
+            <a href="https://linkedin.com/in/christine-adib-82bb03282" target="_blank" rel="noopener noreferrer" class="social-circle-pill" aria-label="Christine Adib LinkedIn Profile">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                 <rect x="2" y="9" width="4" height="12"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </a>
-            <a href="mailto:christineadib8@gmail.com" class="social-link" aria-label="Email Christine Adib">
+
+            <a href="mailto:christineadib8@gmail.com" class="social-circle-pill" aria-label="Email Christine Adib">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
             </a>
-            <a href="tel:+201031034795" class="social-link" aria-label="Call Christine Adib (01031034795)">
+
+            <a href="tel:+201031034795" class="social-circle-pill" aria-label="Call Christine Adib (01031034795)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
             </a>
           </div>
+
         </div>
 
-        <!-- Right Hero Visual: Architectural Brand Identity Card -->
-        <div class="hero-visual">
-          <div class="brand-card">
-            <div class="card-top">
-              <div class="emblem-wrapper">
-                <div class="brand-emblem">CA</div>
-                <div class="emblem-meta">
-                  <h3>Christine Adib</h3>
-                  <span>Full-Stack Engineer</span>
+        <!-- Right Side: The Organic Curved Arch Setup (Matching Mockup Scene) -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-arch-card">
+            
+            <!-- Floating Sparkle Stars -->
+            <span class="sparkle-icon sparkle-1" aria-hidden="true">✦</span>
+            <span class="sparkle-icon sparkle-2" aria-hidden="true">✦</span>
+
+            <!-- Botanical Plant & Laptop Scene Illustration -->
+            <svg class="arch-scene-svg" viewBox="0 0 520 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#CBB59E"/>
+                  <stop offset="100%" stop-color="#AE967E"/>
+                </linearGradient>
+                <linearGradient id="laptopScreenGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#242629"/>
+                  <stop offset="100%" stop-color="#16181A"/>
+                </linearGradient>
+                <linearGradient id="potGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#F3EFE9"/>
+                  <stop offset="100%" stop-color="#DCD4C7"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Wooden Desk Surface -->
+              <rect x="0" y="360" width="520" height="80" fill="url(#deskGrad)"/>
+              <line x1="0" y1="360" x2="520" y2="360" stroke="#9E856D" stroke-width="2"/>
+
+              <!-- Potted Plant in White Ceramic Pot (Top Left of desk) -->
+              <!-- Pot -->
+              <path d="M125 210 L165 210 L158 260 L132 260 Z" fill="url(#potGrad)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.08))"/>
+              <!-- Stems & Lush Leaves -->
+              <path d="M145 210 Q145 150 120 120" stroke="#3A634E" stroke-width="3" fill="none"/>
+              <path d="M145 190 Q170 140 185 110" stroke="#3A634E" stroke-width="3" fill="none"/>
+              <path d="M145 170 Q145 110 155 70" stroke="#3A634E" stroke-width="3.5" fill="none"/>
+
+              <!-- Leaves -->
+              <ellipse cx="120" cy="115" rx="20" ry="12" transform="rotate(-35 120 115)" fill="#2C4E3D"/>
+              <ellipse cx="185" cy="108" rx="22" ry="14" transform="rotate(25 185 108)" fill="#3C6851"/>
+              <ellipse cx="155" cy="68" rx="18" ry="26" transform="rotate(5 155 68)" fill="#4E7D64"/>
+              <ellipse cx="105" cy="155" rx="18" ry="12" transform="rotate(-50 105 155)" fill="#233E31"/>
+              <ellipse cx="182" cy="160" rx="19" ry="13" transform="rotate(40 182 160)" fill="#365C47"/>
+
+              <!-- Books under plant pot -->
+              <rect x="110" y="260" width="70" height="15" rx="3" fill="#E6D7C3" stroke="#D1C0AA"/>
+              <rect x="105" y="275" width="80" height="16" rx="3" fill="#C5B29B" stroke="#B19C83"/>
+
+              <!-- Laptop Display (Mockup with code bracket) -->
+              <!-- Screen housing -->
+              <rect x="220" y="165" width="220" height="155" rx="10" fill="#2E3033" stroke="#52555A" stroke-width="2"/>
+              <!-- Screen area -->
+              <rect x="228" y="173" width="204" height="139" rx="6" fill="url(#laptopScreenGrad)"/>
+              
+              <!-- Code Symbol on Screen: < / > -->
+              <text x="330" y="255" font-family="'Playfair Display', monospace, sans-serif" font-size="34" font-weight="700" fill="#F8F8F5" text-anchor="middle" letter-spacing="4">&lt;/&gt;</text>
+
+              <!-- Laptop Base / Keyboard deck -->
+              <path d="M195 320 L465 320 L445 348 L215 348 Z" fill="#D3D5D8" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.15))"/>
+              <rect x="290" y="340" width="80" height="4" rx="2" fill="#999DA3"/>
+
+              <!-- Ceramic Coffee Mug on Right: "Dream Code Create ♡" -->
+              <!-- Mug Body -->
+              <path d="M430 270 Q430 260 440 260 L480 260 Q490 260 490 270 L485 345 Q485 352 475 352 L445 352 Q435 352 435 345 Z" fill="#FFFFFF" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.1))"/>
+              <!-- Handle -->
+              <path d="M488 280 C508 285 508 325 486 332" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <!-- Handwritten Mug Text -->
+              <text x="462" y="288" font-family="'Caveat', cursive" font-size="12" font-weight="700" fill="#2E3033" text-anchor="middle">Dream</text>
+              <text x="462" y="306" font-family="'Caveat', cursive" font-size="13" font-weight="700" fill="#2E3033" text-anchor="middle">Code</text>
+              <text x="462" y="325" font-family="'Caveat', cursive" font-size="12" font-weight="700" fill="#2E3033" text-anchor="middle">Create ♡</text>
+            </svg>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         About Me & My Skills Section (Side-by-Side Matching Mockup)
+         ======================================================================== -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="about-skills-grid">
+          
+          <!-- Left Card: About Me -->
+          <article class="about-card">
+            
+            <div class="about-card-inner">
+              
+              <!-- Arched Thumbnail Graphic with Plant/Laptop Scene -->
+              <div class="about-arch-thumb">
+                <div class="about-thumb-inner">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" style="margin-bottom: 0.5rem;">
+                    <!-- Plant in arch -->
+                    <ellipse cx="30" cy="22" rx="14" ry="9" fill="#3A634E"/>
+                    <ellipse cx="22" cy="18" rx="8" ry="12" transform="rotate(-30 22 18)" fill="#2E4F3E"/>
+                    <ellipse cx="38" cy="18" rx="8" ry="12" transform="rotate(30 38 18)" fill="#4B7760"/>
+                    <rect x="24" y="25" width="12" height="12" rx="2" fill="#FFFFFF"/>
+                    <!-- Laptop -->
+                    <rect x="15" y="40" width="30" height="16" rx="2" fill="#222222"/>
+                    <rect x="11" y="56" width="38" height="3" rx="1.5" fill="#CBB59E"/>
+                  </svg>
+                  <span style="font-family: var(--font-serif); font-size: 0.85rem; font-weight: 700;">Christine</span>
                 </div>
               </div>
-              <span class="card-status-pill">Active</span>
+
+              <!-- About Text Content -->
+              <div class="about-text-content">
+                <div class="section-heading-bar" style="margin-bottom: 1.15rem;">
+                  <div class="heading-title-group">
+                    <h2 id="about-heading" class="heading-text">About Me</h2>
+                    <div class="heading-line" aria-hidden="true"></div>
+                  </div>
+                </div>
+
+                <p class="about-paragraph">
+                  I'm Christine Adib, a dedicated Full-Stack Developer with a strong passion for .NET and Angular. I love building innovative solutions, solving problems, and continuously learning new technologies.
+                </p>
+
+                <p class="about-paragraph">
+                  Computer Science and Artificial Intelligence graduate and ITI Full-Stack .NET Track alumna. Experienced as Team Leader on the bilingual HandAura marketplace capstone, guiding cross-functional teams, orchestrating Clean/Onion Architectures, and reviewing PRs.
+                </p>
+
+                <!-- Callout Quote with Heart from Reference -->
+                <div class="about-heart-pill">
+                  <span class="heart-symbol">♡</span>
+                  <span>Always eager to learn, collaborate, and make an impact.</span>
+                </div>
+              </div>
+
             </div>
 
-            <div class="card-specs">
-              <div class="spec-item">
-                <span class="spec-label">Primary Stack</span>
-                <span class="spec-value">ASP.NET Core &amp; Angular</span>
+          </article>
+
+          <!-- Right Card: My Skills (The 10-12 Squircle Soft-Shadow Tiles) -->
+          <article id="skills" class="skills-card" aria-labelledby="skills-heading">
+            
+            <div class="skills-heading-wrap">
+              <svg class="skills-gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <h2 id="skills-heading" class="heading-text">My Skills</h2>
+              <div class="skills-heading-line" aria-hidden="true"></div>
+            </div>
+
+            <!-- The Grid of Squircles -->
+            <div class="skills-squircles-grid">
+              
+              <!-- 1. .NET -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="14" fill="#512BD4"/>
+                    <text x="16" y="20" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10" text-anchor="middle">.NET</text>
+                  </svg>
+                </div>
+                <span class="squircle-label">.NET</span>
               </div>
-              <div class="spec-item">
-                <span class="spec-label">Architecture</span>
-                <span class="spec-value">Clean / Onion Arch</span>
+
+              <!-- 2. Angular -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M16 3 L28 7 L26 23 L16 29 L6 23 L4 7 Z" fill="#DD0031"/>
+                    <path d="M16 3 L16 29 L26 23 L28 7 Z" fill="#C3002F"/>
+                    <path d="M16 8 L10 22 L13 22 L14.5 18 L17.5 18 L19 22 L22 22 Z M16 13 L17 16 L15 16 Z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">Angular</span>
               </div>
-              <div class="spec-item">
-                <span class="spec-label">Leadership</span>
-                <span class="spec-value">Team Leader (HandAura)</span>
+
+              <!-- 3. C# -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32">
+                    <polygon points="16,3 27,9 27,23 16,29 5,23 5,9" fill="#9B4F96"/>
+                    <text x="16" y="20" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="11" text-anchor="middle">C#</text>
+                  </svg>
+                </div>
+                <span class="squircle-label">C#</span>
               </div>
-              <div class="spec-item">
-                <span class="spec-label">Graduation</span>
-                <span class="spec-value">CS &amp; AI (Sohag Univ)</span>
+
+              <!-- 4. TypeScript -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32">
+                    <rect width="28" height="28" x="2" y="2" rx="4" fill="#3178C6"/>
+                    <text x="16" y="21" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="12" text-anchor="middle">TS</text>
+                  </svg>
+                </div>
+                <span class="squircle-label">TypeScript</span>
+              </div>
+
+              <!-- 5. SQL Server -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32">
+                    <ellipse cx="16" cy="8" rx="10" ry="4" fill="#CC292B"/>
+                    <path d="M6 8 v8 c0 2.2 4.5 4 10 4 s10 -1.8 10 -4 v-8 Z" fill="#E84135"/>
+                    <path d="M6 16 v8 c0 2.2 4.5 4 10 4 s10 -1.8 10 -4 v-8 Z" fill="#CC292B"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">SQL Server</span>
+              </div>
+
+              <!-- 6. SignalR / Realtime -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="14" fill="#0078D4"/>
+                    <path d="M12 20 L20 12 M20 12 H14 M20 12 V18" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">SignalR</span>
+              </div>
+
+              <!-- 7. Git -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32">
+                    <rect width="22" height="22" x="5" y="5" rx="4" transform="rotate(45 16 16)" fill="#F05032"/>
+                    <circle cx="12" cy="16" r="2.5" fill="#FFFFFF"/>
+                    <circle cx="20" cy="12" r="2.5" fill="#FFFFFF"/>
+                    <circle cx="20" cy="20" r="2.5" fill="#FFFFFF"/>
+                    <path d="M12 16 L20 12 M12 16 L20 20" stroke="#FFFFFF" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">Git</span>
+              </div>
+
+              <!-- 8. REST APIs -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <rect width="28" height="28" x="2" y="2" rx="6" fill="#F0F5FA"/>
+                    <path d="M9 18a4 4 0 0 1 7.5-1.5A3.5 3.5 0 0 1 23 18a3 3 0 0 1-3 3H10a3 3 0 0 1-1-3z" fill="#2B88D9"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">REST APIs</span>
+              </div>
+
+              <!-- 9. Clean / Onion Architecture -->
+              <div class="skill-squircle" title="Clean / Onion Architecture">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32">
+                    <polygon points="16,4 26,9 16,14 6,9" fill="#C47A53"/>
+                    <polygon points="16,11 26,16 16,21 6,16" fill="#D8926B"/>
+                    <polygon points="16,18 26,23 16,28 6,23" fill="#A8613C"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">Clean / Onion Architecture</span>
+              </div>
+
+              <!-- 10. Team Leadership -->
+              <div class="skill-squircle">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" fill="#224335"/>
+                    <path d="M16 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM11 23v-1a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v1" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">Teamwork</span>
+              </div>
+
+              <!-- 11. Microsoft Semantic Kernel -->
+              <div class="skill-squircle" title="Microsoft Semantic Kernel">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" fill="#7B42BC"/>
+                    <path d="M12 20a4 4 0 0 1-1-7.8A4.5 4.5 0 0 1 19.5 10a4 4 0 0 1 4 4.5A3.5 3.5 0 0 1 20 20z" stroke="#FFFFFF" stroke-width="1.8"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">Microsoft Semantic Kernel</span>
+              </div>
+
+              <!-- 12. Qdrant (in progress) -->
+              <div class="skill-squircle" title="Qdrant (in progress)">
+                <div class="squircle-icon-wrap">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <rect width="28" height="28" x="2" y="2" rx="6" fill="#FFF2EA" stroke="#C47A53" stroke-width="1.5" stroke-dasharray="3 2"/>
+                    <circle cx="16" cy="16" r="6" fill="#C47A53"/>
+                  </svg>
+                </div>
+                <span class="squircle-label">Qdrant (in progress)</span>
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         My Projects Section (Matching Exact Device Mockup Cards)
+         ======================================================================== -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        
+        <!-- Section Header with Folder Icon & View All Button -->
+        <div class="projects-header-row">
+          <div class="projects-title-group">
+            <svg class="projects-folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <h2 id="projects-heading">My Projects</h2>
+            <div class="projects-divider-line" aria-hidden="true"></div>
+          </div>
+
+          <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" class="btn-view-all-projects">
+            <span>View All Projects</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Projects Cards Grid -->
+        <div class="projects-cards-grid">
+          
+          <!-- Project 1: HandAura (Featured Capstone) -->
+          <article class="project-mockup-card">
+            
+            <!-- Laptop Frame with Mockup Art -->
+            <div class="project-device-frame">
+              <span class="project-heart-badge" title="Featured Capstone">♡</span>
+              <!-- Laptop Artwork inside -->
+              <svg class="device-art-svg" viewBox="0 0 300 170" fill="none">
+                <!-- Browser Bar -->
+                <rect x="0" y="0" width="300" height="22" fill="#EAE5DE"/>
+                <circle cx="14" cy="11" r="3" fill="#D36B55"/>
+                <circle cx="24" cy="11" r="3" fill="#D9A84E"/>
+                <circle cx="34" cy="11" r="3" fill="#62A478"/>
+                <rect x="50" y="5" width="160" height="12" rx="3" fill="#FFFFFF"/>
+                <text x="56" y="14" font-size="7" fill="#888">frontend-handmade-project-dpn3.vercel.app</text>
+                <!-- Website Content Art -->
+                <rect x="0" y="22" width="300" height="148" fill="#FBF8F3"/>
+                <!-- Hero Banner -->
+                <rect x="15" y="32" width="270" height="48" rx="6" fill="#224335"/>
+                <text x="30" y="56" font-family="'Playfair Display', serif" font-size="14" font-weight="700" fill="#FFFFFF">HandAura Marketplace</text>
+                <text x="30" y="68" font-size="8" fill="#E0D6C8">Handmade Goods &bull; Bilingual Arabic / English</text>
+                <!-- Product Grid Cards -->
+                <rect x="15" y="90" width="82" height="66" rx="4" fill="#FFFFFF" stroke="#E6DDCF"/>
+                <rect x="22" y="96" width="68" height="34" rx="3" fill="#EFE8DD"/>
+                <rect x="22" y="136" width="45" height="6" rx="2" fill="#224335"/>
+                <rect x="22" y="146" width="30" height="5" rx="2" fill="#C47A53"/>
+
+                <rect x="109" y="90" width="82" height="66" rx="4" fill="#FFFFFF" stroke="#E6DDCF"/>
+                <rect x="116" y="96" width="68" height="34" rx="3" fill="#E4EBE5"/>
+                <rect x="116" y="136" width="50" height="6" rx="2" fill="#224335"/>
+                <rect x="116" y="146" width="30" height="5" rx="2" fill="#C47A53"/>
+
+                <rect x="203" y="90" width="82" height="66" rx="4" fill="#FFFFFF" stroke="#E6DDCF"/>
+                <rect x="210" y="96" width="68" height="34" rx="3" fill="#EFE8DD"/>
+                <rect x="210" y="136" width="45" height="6" rx="2" fill="#224335"/>
+                <rect x="210" y="146" width="30" height="5" rx="2" fill="#C47A53"/>
+              </svg>
+            </div>
+
+            <!-- Content -->
+            <div class="project-card-body">
+              <h3 class="project-card-title">HandAura</h3>
+              <p class="project-card-subtitle">
+                Bilingual multi-vendor marketplace connecting customers with handmade artisans. Team Leader Capstone built using Clean / Onion Architecture, SignalR, Paymob, and Angular 20.
+              </p>
+              <div class="project-links-row" style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 0.35rem; font-size: 0.825rem; font-weight: 700;">
+                <a href="https://frontend-handmade-project-dpn3.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--terracotta); text-decoration: underline;">Live Demo ↗</a>
+                <span style="color: var(--border-medium);">&bull;</span>
+                <a href="https://github.com/ChristineAdib/Handmade-Project" target="_blank" rel="noopener noreferrer" style="color: var(--text-body); text-decoration: underline;">Backend Repo</a>
+                <span style="color: var(--border-medium);">&bull;</span>
+                <a href="https://github.com/ChristineAdib/Frontend-Handmade-Project" target="_blank" rel="noopener noreferrer" style="color: var(--text-body); text-decoration: underline;">Frontend Repo</a>
               </div>
             </div>
 
-            <div class="card-footer-info">
-              <div class="info-row">
+            <div class="project-card-meta-row">
+              <div class="project-tech-pills">
+                <span class="project-mini-pill">.NET 8</span>
+                <span class="project-mini-pill">Angular 20</span>
+                <span class="project-mini-pill">SignalR</span>
+                <span class="project-mini-pill">Paymob</span>
+              </div>
+
+              <!-- Circular Arrow Action Button -->
+              <a href="https://frontend-handmade-project-dpn3.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-arrow-btn" aria-label="Visit HandAura Live Website">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+          </article>
+
+          <!-- Project 2: 5omasia -->
+          <article class="project-mockup-card">
+            
+            <div class="project-device-frame">
+              <span class="project-heart-badge">♡</span>
+              <svg class="device-art-svg" viewBox="0 0 300 170" fill="none">
+                <rect x="0" y="0" width="300" height="22" fill="#EAE5DE"/>
+                <circle cx="14" cy="11" r="3" fill="#D36B55"/>
+                <circle cx="24" cy="11" r="3" fill="#D9A84E"/>
+                <circle cx="34" cy="11" r="3" fill="#62A478"/>
+                <rect x="0" y="22" width="300" height="148" fill="#F8F6F1"/>
+                <!-- Football Field Graphic -->
+                <rect x="25" y="38" width="250" height="114" rx="8" fill="#2E5A44" stroke="#FFFFFF" stroke-width="1.5"/>
+                <line x1="150" y1="38" x2="150" y2="152" stroke="#FFFFFF" stroke-width="1.5"/>
+                <circle cx="150" cy="95" r="24" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+                <!-- Field booking overlay card -->
+                <rect x="60" y="55" width="180" height="80" rx="6" fill="rgba(255,255,255,0.95)" stroke="#D4C5B3"/>
+                <text x="150" y="80" font-family="'Playfair Display', serif" font-size="12" font-weight="700" fill="#222222" text-anchor="middle">5omasia Field Booking</text>
+                <text x="150" y="98" font-size="8" fill="#555" text-anchor="middle">Reservations &bull; Notifications &bull; REST API</text>
+                <rect x="100" y="110" width="100" height="15" rx="7" fill="#C47A53"/>
+                <text x="150" y="121" font-size="7" font-weight="700" fill="#FFF" text-anchor="middle">Reserve Pitch</text>
+              </svg>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-card-title">5omasia</h3>
+              <p class="project-card-subtitle">
+                Football field booking platform with player scheduling, authentication, RESTful APIs, and Firebase push notifications.
+              </p>
+            </div>
+
+            <div class="project-card-meta-row">
+              <div class="project-tech-pills">
+                <span class="project-mini-pill">ASP.NET Core</span>
+                <span class="project-mini-pill">EF Core</span>
+                <span class="project-mini-pill">Firebase</span>
+              </div>
+
+              <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" class="project-arrow-btn" aria-label="View 5omasia Details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+          </article>
+
+          <!-- Project 3: TalabatApp -->
+          <article class="project-mockup-card">
+            
+            <div class="project-device-frame">
+              <span class="project-heart-badge">♡</span>
+              <svg class="device-art-svg" viewBox="0 0 300 170" fill="none">
+                <rect x="0" y="0" width="300" height="22" fill="#EAE5DE"/>
+                <circle cx="14" cy="11" r="3" fill="#D36B55"/>
+                <circle cx="24" cy="11" r="3" fill="#D9A84E"/>
+                <circle cx="34" cy="11" r="3" fill="#62A478"/>
+                <rect x="0" y="22" width="300" height="148" fill="#FBF8F3"/>
+                <!-- Food Delivery UI Mockup -->
+                <rect x="20" y="35" width="260" height="40" rx="6" fill="#F4EDE4" stroke="#DECFC0"/>
+                <text x="35" y="55" font-family="'Playfair Display', serif" font-size="12" font-weight="700" fill="#222">TalabatApp Backend</text>
+                <text x="35" y="67" font-size="7.5" fill="#777">Restaurant Catalogs &bull; Order Pipelines &bull; Payments</text>
+                
+                <rect x="20" y="86" width="125" height="66" rx="5" fill="#FFFFFF" stroke="#EADCCE"/>
+                <circle cx="45" cy="110" r="14" fill="#C47A53"/>
+                <text x="45" y="114" fill="#FFF" font-size="10" text-anchor="middle">🍽️</text>
+                <rect x="68" y="102" width="65" height="6" rx="2" fill="#222"/>
+                <rect x="68" y="114" width="45" height="5" rx="2" fill="#888"/>
+
+                <rect x="155" y="86" width="125" height="66" rx="5" fill="#FFFFFF" stroke="#EADCCE"/>
+                <circle cx="180" cy="110" r="14" fill="#224335"/>
+                <text x="180" y="114" fill="#FFF" font-size="10" text-anchor="middle">💳</text>
+                <rect x="203" y="102" width="65" height="6" rx="2" fill="#222"/>
+                <rect x="203" y="114" width="45" height="5" rx="2" fill="#888"/>
+              </svg>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-card-title">TalabatApp</h3>
+              <p class="project-card-subtitle">
+                Food ordering backend service architected with Onion Architecture, covering restaurant menus, dynamic carts, and payment integrations.
+              </p>
+            </div>
+
+            <div class="project-card-meta-row">
+              <div class="project-tech-pills">
+                <span class="project-mini-pill">ASP.NET Core</span>
+                <span class="project-mini-pill">Onion Arch</span>
+              </div>
+
+              <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" class="project-arrow-btn" aria-label="View TalabatApp Details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+          </article>
+
+          <!-- Project 4: E-Commerce API -->
+          <article class="project-mockup-card">
+            
+            <div class="project-device-frame">
+              <span class="project-heart-badge">♡</span>
+              <svg class="device-art-svg" viewBox="0 0 300 170" fill="none">
+                <rect x="0" y="0" width="300" height="22" fill="#EAE5DE"/>
+                <circle cx="14" cy="11" r="3" fill="#D36B55"/>
+                <circle cx="24" cy="11" r="3" fill="#D9A84E"/>
+                <circle cx="34" cy="11" r="3" fill="#62A478"/>
+                <rect x="0" y="22" width="300" height="148" fill="#F4EDE4"/>
+                
+                <!-- API Dashboard Graphic -->
+                <rect x="25" y="35" width="250" height="115" rx="6" fill="#FFFFFF" stroke="#D9C7B6"/>
+                <text x="40" y="55" font-family="'Playfair Display', serif" font-size="12" font-weight="700" fill="#222">E-Commerce REST API</text>
+                
+                <!-- API Endpoints -->
+                <rect x="40" y="68" width="40" height="14" rx="3" fill="#224335"/>
+                <text x="60" y="78" font-size="7" font-weight="700" fill="#FFF" text-anchor="middle">GET</text>
+                <text x="88" y="78" font-family="monospace" font-size="8" fill="#444">/api/products?sort=price</text>
+
+                <rect x="40" y="90" width="40" height="14" rx="3" fill="#C47A53"/>
+                <text x="60" y="100" font-size="7" font-weight="700" fill="#FFF" text-anchor="middle">POST</text>
+                <text x="88" y="100" font-family="monospace" font-size="8" fill="#444">/api/basket/checkout</text>
+
+                <rect x="40" y="112" width="40" height="14" rx="3" fill="#3178C6"/>
+                <text x="60" y="122" font-size="7" font-weight="700" fill="#FFF" text-anchor="middle">AUTH</text>
+                <text x="88" y="122" font-family="monospace" font-size="8" fill="#444">/api/account/login (JWT)</text>
+              </svg>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-card-title">E-Commerce API</h3>
+              <p class="project-card-subtitle">
+                ASP.NET Core backend API built using Onion Architecture and the Specification Pattern for flexible sorting, filtering, and pagination.
+              </p>
+            </div>
+
+            <div class="project-card-meta-row">
+              <div class="project-tech-pills">
+                <span class="project-mini-pill">ASP.NET Core</span>
+                <span class="project-mini-pill">EF Core</span>
+                <span class="project-mini-pill">Specification</span>
+              </div>
+
+              <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" class="project-arrow-btn" aria-label="View E-Commerce API Details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Experience & Education Section
+         ======================================================================== -->
+    <section id="experience" class="credentials-section" aria-labelledby="experience-heading">
+      <div class="container">
+        
+        <div class="section-heading-bar">
+          <div class="heading-title-group">
+            <svg class="heading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>
+            <h2 id="experience-heading" class="heading-text">Experience &amp; Education</h2>
+            <div class="heading-line" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="credentials-grid">
+          
+          <!-- Experience Card: Team Leader -->
+          <article class="credential-card">
+            <div>
+              <span class="cred-badge">Leadership Role</span>
+              <h3 class="cred-title">Team Leader &mdash; HandAura Capstone</h3>
+              <p class="cred-sub">ITI Full-Stack .NET Track &bull; Jan 2026 &ndash; Present</p>
+              <p class="cred-desc">
+                Led a cross-functional engineering team building HandAura, coordinating sprint planning, reviewing teammates' pull requests, mentoring on Clean Architecture, and resolving complex multi-file merge conflicts.
+              </p>
+            </div>
+          </article>
+
+          <!-- Education Card 1: ITI -->
+          <article id="education" class="credential-card">
+            <div>
+              <span class="cred-badge">Status: Completed</span>
+              <h3 class="cred-title">Information Technology Institute (ITI)</h3>
+              <p class="cred-sub">Full-Stack .NET Web Development Track &bull; Graduated: July 4, 2026</p>
+              <p class="cred-desc">
+                Intensive hands-on training in C#, ASP.NET Core, Angular, SQL Server, EF Core, RESTful APIs, authentication, Git/GitHub, and Agile teamwork practices.
+              </p>
+            </div>
+          </article>
+
+          <!-- Education Card 2: Sohag University -->
+          <article class="credential-card">
+            <div>
+              <span class="cred-badge">Bachelor's Degree</span>
+              <h3 class="cred-title">Sohag University</h3>
+              <p class="cred-sub">CS &amp; Artificial Intelligence &bull; Oct 2021 &ndash; Jun 2025</p>
+              <p class="cred-desc">
+                Graduated with a comprehensive computer science and AI foundation. Participant in the Egyptian Collegiate Programming Contest (ECPC) 2023, 500+ Codeforces problems solved, and 50+ LeetCode SQL challenges.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         The Signature "Let's Connect!" Forest Green Wave Banner (Exact Match)
+         ======================================================================== -->
+    <section id="contact" class="lets-connect-section" aria-labelledby="connect-heading">
+      <div class="container">
+        
+        <div class="connect-wave-container">
+          
+          <!-- Leaf accents in banner -->
+          <svg class="connect-leaf-left" viewBox="0 0 100 150" fill="none" aria-hidden="true">
+            <path d="M0 120 C30 100, 50 60, 40 20" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+            <path d="M15 90 C35 85, 45 70, 35 60 C25 50, 15 65, 15 75 Z" fill="#FFFFFF"/>
+            <path d="M25 50 C45 40, 50 25, 40 18 C30 10, 20 25, 18 35 Z" fill="#FFFFFF"/>
+          </svg>
+
+          <svg class="connect-leaf-right" viewBox="0 0 100 150" fill="none" aria-hidden="true">
+            <path d="M0 120 C30 100, 50 60, 40 20" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+            <path d="M15 90 C35 85, 45 70, 35 60 C25 50, 15 65, 15 75 Z" fill="#FFFFFF"/>
+            <path d="M25 50 C45 40, 50 25, 40 18 C30 10, 20 25, 18 35 Z" fill="#FFFFFF"/>
+          </svg>
+
+          <!-- 3-Column Content inside Banner -->
+          <div class="connect-wave-grid">
+            
+            <!-- Column 1: Intro with Paper Airplane -->
+            <div class="connect-intro-col">
+              <div class="plane-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </div>
+              <h2 id="connect-heading" class="connect-title">Let's Connect!</h2>
+              <p class="connect-subtitle">I'm always open to new opportunities and exciting projects.</p>
+            </div>
+
+            <!-- Column 2: Direct Contact Lines -->
+            <div class="connect-details-col">
+              <div class="connect-line-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:christineadib8@gmail.com">christineadib8@gmail.com</a>
+              </div>
+
+              <div class="connect-line-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <a href="https://linkedin.com/in/christine-adib-82bb03282" target="_blank" rel="noopener noreferrer">linkedin.com/in/christine-adib-82bb03282</a>
+              </div>
+
+              <div class="connect-line-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Sohag, Egypt &bull; Open to Onsite / Hybrid / Remote</span>
+                <span>Sohag, Egypt</span>
               </div>
-              <div class="info-row">
+
+              <div class="connect-line-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
-                <span>ITI Full-Stack Track Graduate (July 2026)</span>
+                <a href="tel:+201031034795">01031034795</a>
               </div>
             </div>
-          </div>
-        </div>
 
-      </div>
-    </section>
+            <!-- Column 3: Get In Touch CTA -->
+            <div class="connect-action-col">
+              <button id="toggle-form-btn" type="button" class="btn-get-in-touch">
+                <span>Get In Touch</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
 
-    <!-- ========================================================================
-         About Me Section
-         ======================================================================== -->
-    <section id="about" class="section about-section" aria-labelledby="about-title">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-label">Background</span>
-          <h2 id="about-title" class="section-title">About Me</h2>
-          <p class="section-description">A disciplined engineer combining robust backend architecture with modern frontend experiences.</p>
-        </div>
-
-        <div class="about-layout">
-          <!-- Main Narrative Column -->
-          <div class="about-narrative">
-            <p class="about-lead">
-              "I'm a Computer Science and Artificial Intelligence graduate and a Full-Stack .NET &amp; Angular developer. I enjoy problem-solving, building useful applications, and taking responsibility for delivering quality work."
-            </p>
-
-            <p class="about-text">
-              I naturally gravitate toward leadership and teamwork. I enjoy helping people stay aligned, supporting teammates when they face challenges, and turning ideas into working products.
-            </p>
-
-            <p class="about-text">
-              I'm always curious to learn new technologies, improve my skills, and take on meaningful challenges. Whether designing resilient domain models, optimizing relational databases, or orchestrating real-time client interactions, I care about doing things properly rather than just getting them done.
-            </p>
           </div>
 
-          <!-- Highlights & Pillars Column -->
-          <div class="about-highlights">
-            <div class="highlight-card">
-              <div class="highlight-header">
-                <div class="highlight-icon-box">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="16 18 22 12 16 6"></polyline>
-                    <polyline points="8 6 2 12 8 18"></polyline>
-                  </svg>
-                </div>
-                <h4>Engineering Philosophy</h4>
-              </div>
-              <p>Committed to Clean and Onion Architectures, SOLID principles, testable code, and high-performance APIs that scale reliably.</p>
-            </div>
-
-            <div class="highlight-card">
-              <div class="highlight-header">
-                <div class="highlight-icon-box">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                  </svg>
-                </div>
-                <h4>Collaborative Leadership</h4>
-              </div>
-              <p>Experienced in guiding cross-functional teams, orchestrating Git Flow workflows, conducting thorough PR code reviews, and resolving merge blockers.</p>
-            </div>
-
-            <div class="highlight-card">
-              <div class="highlight-header">
-                <div class="highlight-icon-box">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  </svg>
-                </div>
-                <h4>Languages</h4>
-              </div>
-              <div class="languages-list">
-                <span class="lang-pill">English <span class="lang-level">(Fluent)</span></span>
-                <span class="lang-pill">Arabic <span class="lang-level">(Native)</span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         Technical Skills Section
-         ======================================================================== -->
-    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-label">Expertise</span>
-          <h2 id="skills-title" class="section-title">Technical Skills</h2>
-          <p class="section-description">Core technologies, frameworks, architectures, and tools applied across real-world systems.</p>
-        </div>
-
-        <!-- Filter Controls -->
-        <div class="skills-controls" role="tablist" aria-label="Skills Category Filters">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
-          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend &amp; Arch</button>
-          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
-          <button class="filter-btn" data-filter="database" role="tab" aria-selected="false">Databases &amp; Real-Time</button>
-          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; Integrations</button>
-          <button class="filter-btn" data-filter="security-tools" role="tab" aria-selected="false">Security &amp; Tools</button>
-        </div>
-
-        <!-- Skills Grid -->
-        <div class="skills-grid">
-          
-          <!-- Category 1: Backend & Architecture -->
-          <article class="skill-category-card" data-category="backend">
-            <div class="category-header">
-              <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                </svg>
-              </div>
-              <h3 class="category-title">Backend &amp; Architecture</h3>
-            </div>
-            <div class="skills-tags-wrap">
-              <span class="skill-tag">ASP.NET Core</span>
-              <span class="skill-tag">Web API</span>
-              <span class="skill-tag">MVC</span>
-              <span class="skill-tag">Entity Framework Core</span>
-              <span class="skill-tag">Clean / Onion Architecture</span>
-              <span class="skill-tag">SOLID Principles</span>
-            </div>
-          </article>
-
-          <!-- Category 2: Frontend -->
-          <article class="skill-category-card" data-category="frontend">
-            <div class="category-header">
-              <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="3" y1="9" x2="21" y2="9"></line>
-                  <line x1="9" y1="21" x2="9" y2="9"></line>
-                </svg>
-              </div>
-              <h3 class="category-title">Frontend</h3>
-            </div>
-            <div class="skills-tags-wrap">
-              <span class="skill-tag">Angular 20</span>
-              <span class="skill-tag">Standalone Components</span>
-              <span class="skill-tag">Signals</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">RxJS</span>
-            </div>
-          </article>
-
-          <!-- Category 3: Databases & Real-Time -->
-          <article class="skill-category-card" data-category="database">
-            <div class="category-header">
-              <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                </svg>
-              </div>
-              <h3 class="category-title">Databases &amp; Real-Time</h3>
-            </div>
-            <div class="skills-tags-wrap">
-              <span class="skill-tag">SQL Server</span>
-              <span class="skill-tag">Redis</span>
-              <span class="skill-tag">SignalR</span>
-            </div>
-          </article>
-
-          <!-- Category 4: AI & Integrations -->
-          <article class="skill-category-card" data-category="ai">
-            <div class="category-header">
-              <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
-                </svg>
-              </div>
-              <h3 class="category-title">AI &amp; Integrations</h3>
-            </div>
-            <div class="skills-tags-wrap">
-              <span class="skill-tag">Microsoft Semantic Kernel</span>
-              <span class="skill-tag">RAG</span>
-              <span class="skill-tag in-progress" title="Currently actively exploring and integrating">Qdrant (in progress)</span>
-              <span class="skill-tag">Paymob</span>
-              <span class="skill-tag">Cloudinary</span>
-            </div>
-          </article>
-
-          <!-- Category 5: Security -->
-          <article class="skill-category-card" data-category="security-tools">
-            <div class="category-header">
-              <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                </svg>
-              </div>
-              <h3 class="category-title">Security</h3>
-            </div>
-            <div class="skills-tags-wrap">
-              <span class="skill-tag">ASP.NET Core Identity</span>
-              <span class="skill-tag">JWT</span>
-              <span class="skill-tag">Role-Based Authorization</span>
-            </div>
-          </article>
-
-          <!-- Category 6: Tools & Practices -->
-          <article class="skill-category-card" data-category="security-tools">
-            <div class="category-header">
-              <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                </svg>
-              </div>
-              <h3 class="category-title">Tools &amp; Practices</h3>
-            </div>
-            <div class="skills-tags-wrap">
-              <span class="skill-tag">Git &amp; GitHub</span>
-              <span class="skill-tag">Swagger</span>
-              <span class="skill-tag">Postman</span>
-              <span class="skill-tag">Unit Testing</span>
-              <span class="skill-tag">Team Leadership</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         Featured Projects Section
-         ======================================================================== -->
-    <section id="projects" class="section projects-section" aria-labelledby="projects-title">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-label">Portfolio</span>
-          <h2 id="projects-title" class="section-title">Featured Projects</h2>
-          <p class="section-description">Production-ready applications, capstone leadership work, and architectural backend implementations.</p>
-        </div>
-
-        <!-- Featured Project 1: HandAura (Prominent Layout) -->
-        <div class="featured-project-container">
-          <article class="featured-project-card">
-            
-            <div class="featured-badge-ribbon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-              <span>Featured Capstone Project</span>
-            </div>
-
-            <div class="featured-header-row">
-              <div class="project-title-group">
-                <h3>HandAura</h3>
-                <p class="project-tagline">Bilingual Multi-Vendor Marketplace for Handmade Goods</p>
-              </div>
-              <div class="project-role-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="8.5" cy="7" r="4"></circle>
-                  <polyline points="17 11 19 13 23 9"></polyline>
-                </svg>
-                <span>Role: Team Leader &bull; ITI Capstone</span>
-              </div>
-            </div>
-
-            <div class="featured-body">
-              <p class="featured-description">
-                HandAura is a bilingual Arabic/English multi-vendor marketplace connecting customers with handmade product creators. The platform is built using a Clean/Onion Architecture and provides secure authentication, product and shop management, real-time buyer-seller communication, notifications, and payment integration.
-              </p>
-
-              <!-- Architecture Highlights -->
-              <div class="architecture-highlights">
-                <h4 class="arch-title">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                    <polyline points="2 17 12 22 22 17"></polyline>
-                    <polyline points="2 12 12 17 22 12"></polyline>
-                  </svg>
-                  Architecture &amp; Engineering Highlights
-                </h4>
-                <div class="arch-list">
-                  <div class="arch-item">5-layer Clean/Onion structure: Domain, Application, Infrastructure, API, MVC Admin.</div>
-                  <div class="arch-item">Authentication: JWT + cookie-based, role-based authorization for customers &amp; vendors.</div>
-                  <div class="arch-item">Real-time buyer-seller instant messaging &amp; event notifications via SignalR hubs.</div>
-                  <div class="arch-item">Core e-commerce: shops, products, orders, seller balances modeled in SQL Server with EF Core.</div>
-                  <div class="arch-item">Integrations: Paymob payment gateway, Cloudinary CDN media, and OTP verification.</div>
-                  <div class="arch-item">Modern Angular 20 client built with standalone components and reactive Signals.</div>
-                </div>
-              </div>
-
-              <!-- Tech Tags -->
-              <div class="project-tech-tags">
-                <span class="tech-tag">ASP.NET Core</span>
-                <span class="tech-tag">Angular 20</span>
-                <span class="tech-tag">SQL Server</span>
-                <span class="tech-tag">Entity Framework Core</span>
-                <span class="tech-tag">SignalR</span>
-                <span class="tech-tag">JWT</span>
-                <span class="tech-tag">Redis</span>
-                <span class="tech-tag">Paymob</span>
-                <span class="tech-tag">Cloudinary</span>
-              </div>
-            </div>
-
-            <!-- Action Links -->
-            <div class="project-actions-row">
-              <a href="https://frontend-handmade-project-dpn3.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-                <span>Live Website Demo</span>
-              </a>
-
-              <a href="https://github.com/ChristineAdib/Handmade-Project" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-outline">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-                <span>Backend Repository</span>
-              </a>
-
-              <a href="https://github.com/ChristineAdib/Frontend-Handmade-Project" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-outline">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-                <span>Frontend Repository</span>
-              </a>
-            </div>
-
-          </article>
-        </div>
-
-        <!-- Secondary Projects Grid -->
-        <div class="projects-grid">
-          
-          <!-- Project 2: 5omasia -->
-          <article class="project-card">
-            <div>
-              <div class="project-card-header">
-                <div class="project-meta-bar">
-                  <span class="project-type">Graduation Project</span>
-                  <span>2024 &ndash; 2025</span>
-                </div>
-                <h3 class="project-card-title">5omasia</h3>
-                <p class="project-card-subtitle">Football Field Booking Platform</p>
-              </div>
-
-              <p class="project-card-description">
-                A university graduation project focused on football field booking, authentication, RESTful APIs, and notifications.
-              </p>
-
-              <div class="project-card-details">
-                <strong>Key Details:</strong> Built the backend with ASP.NET Core and EF Core, designing RESTful APIs for field reservations, player authentication, and Firebase push notifications. Collaborated with a 3-person team with a focus on data validation, error handling, and API security.
-              </div>
-            </div>
-
-            <div class="project-card-footer">
-              <div class="project-tech-tags" style="margin-bottom: 0;">
-                <span class="tech-tag">ASP.NET Core</span>
-                <span class="tech-tag">Entity Framework Core</span>
-                <span class="tech-tag">Firebase</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: TalabatApp -->
-          <article class="project-card">
-            <div>
-              <div class="project-card-header">
-                <div class="project-meta-bar">
-                  <span class="project-type">Backend Service</span>
-                  <span>Architecture Showcase</span>
-                </div>
-                <h3 class="project-card-title">TalabatApp</h3>
-                <p class="project-card-subtitle">Food Ordering Backend</p>
-              </div>
-
-              <p class="project-card-description">
-                An ASP.NET Core backend project built using Onion Architecture, covering restaurant, order, and payment integration.
-              </p>
-
-              <div class="project-card-details">
-                <strong>Key Details:</strong> Encapsulates domain logic independently of external frameworks, handling restaurant menus, dynamic checkout order pipelines, and third-party payment integration with strict separation of concerns.
-              </div>
-            </div>
-
-            <div class="project-card-footer">
-              <div class="project-tech-tags" style="margin-bottom: 0;">
-                <span class="tech-tag">ASP.NET Core</span>
-                <span class="tech-tag">Onion Architecture</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4: E-Commerce API -->
-          <article class="project-card">
-            <div>
-              <div class="project-card-header">
-                <div class="project-meta-bar">
-                  <span class="project-type">REST API</span>
-                  <span>Architecture Showcase</span>
-                </div>
-                <h3 class="project-card-title">E-Commerce API</h3>
-                <p class="project-card-subtitle">E-Commerce Backend API</p>
-              </div>
-
-              <p class="project-card-description">
-                An ASP.NET Core backend API built using Onion Architecture, covering products, shopping carts, and orders.
-              </p>
-
-              <div class="project-card-details">
-                <strong>Key Details:</strong> Implemented the Specification Pattern for flexible sorting, filtering, and pagination across expansive product catalogs, alongside resilient shopping cart session persistence.
-              </div>
-            </div>
-
-            <div class="project-card-footer">
-              <div class="project-tech-tags" style="margin-bottom: 0;">
-                <span class="tech-tag">ASP.NET Core</span>
-                <span class="tech-tag">Entity Framework Core</span>
-                <span class="tech-tag">Onion Architecture</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         Professional Experience Section
-         ======================================================================== -->
-    <section id="experience" class="section experience-section" aria-labelledby="experience-title">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-label">Leadership &amp; Career</span>
-          <h2 id="experience-title" class="section-title">Professional Experience</h2>
-          <p class="section-description">Practical track record of cross-functional team coordination, technical mentorship, and delivery.</p>
-        </div>
-
-        <div class="timeline">
-          
-          <div class="timeline-item">
-            <div class="timeline-node" aria-hidden="true"></div>
-            <div class="timeline-card">
+          <!-- Interactive Expandable Contact Form -->
+          <div id="contact-drawer" class="connect-form-drawer">
+            <form id="contact-form" novalidate>
+              <div id="form-status" class="form-status-msg" role="alert" aria-live="polite"></div>
               
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role-title">Team Leader &mdash; HandAura Capstone Project</h3>
-                  <p class="timeline-organization">Information Technology Institute (ITI) &bull; Full-Stack .NET Track</p>
-                </div>
-                <div class="timeline-period">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                  </svg>
-                  <span>January 2026 &ndash; Present</span>
-                </div>
+              <div class="connect-form-grid">
+                <input type="text" id="user-name" class="connect-input" placeholder="Your Name *" required>
+                <input type="email" id="user-email" class="connect-input" placeholder="Your Email Address *" required>
+                <input type="text" id="user-subject" class="connect-input" placeholder="Subject *" style="grid-column: span 2;" required>
+                <textarea id="user-message" class="connect-textarea" placeholder="Your Message *" required></textarea>
               </div>
 
-              <div class="timeline-body">
-                <p>
-                  Led a cross-functional engineering team building HandAura, a full-scale bilingual multi-vendor marketplace platform. Responsible for engineering quality, task velocity, architecture decisions, and cross-stream cohesion between backend and frontend workflows.
-                </p>
-
-                <ul class="responsibilities-list">
-                  <li class="responsibility-item">
-                    <strong>Workstream Coordination:</strong> Coordinated backend and frontend workstreams, sprint planning, task breakdowns, and milestone deliveries.
-                  </li>
-                  <li class="responsibility-item">
-                    <strong>Task Organization &amp; Milestones:</strong> Structured sprint backlogs and ensured consistent progression toward production readiness.
-                  </li>
-                  <li class="responsibility-item">
-                    <strong>Code Reviews &amp; Mentorship:</strong> Reviewed teammates' pull requests and mentored colleagues on Clean Architecture, EF Core, and Angular standalone-component patterns.
-                  </li>
-                  <li class="responsibility-item">
-                    <strong>Technical Problem Solving:</strong> Supported teammates when facing hurdles, helped resolve technical blockers, and guided integration of new technologies (SignalR, Semantic Kernel).
-                  </li>
-                  <li class="responsibility-item">
-                    <strong>Git Branching &amp; Flow:</strong> Set up and enforced a Git Flow branching strategy with GitHub branch protection rules, resolving complex multi-file merge conflicts to maintain release momentum.
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         Education & Achievements Section
-         ======================================================================== -->
-    <section id="education" class="section education-section" aria-labelledby="education-title">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-label">Credentials</span>
-          <h2 id="education-title" class="section-title">Education &amp; Achievements</h2>
-          <p class="section-description">Formal academic background, intensive professional institute training, and verified competitive programming milestones.</p>
-        </div>
-
-        <!-- Education Grid -->
-        <div class="education-grid">
-          
-          <!-- Card 1: ITI -->
-          <article class="education-card">
-            <div>
-              <div class="edu-top">
-                <div class="edu-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                  </svg>
-                </div>
-                <span class="edu-status-badge completed">Status: Completed</span>
-              </div>
-
-              <h3 class="edu-institution">Information Technology Institute (ITI)</h3>
-              <p class="edu-degree">Full-Stack .NET Web Development Track</p>
-
-              <div class="edu-meta">
-                <span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                  </svg>
-                  January 2026 &ndash; July 4, 2026
-                </span>
-                <span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Graduated: July 4, 2026
-                </span>
-              </div>
-            </div>
-
-            <div class="edu-details">
-              Intensive hands-on professional training in C#, ASP.NET Core, Angular, SQL Server, Entity Framework Core, RESTful APIs, authentication, Git/GitHub, and Agile teamwork practices. Served as Team Leader for the track's capstone project (HandAura).
-            </div>
-          </article>
-
-          <!-- Card 2: Sohag University -->
-          <article class="education-card">
-            <div>
-              <div class="edu-top">
-                <div class="edu-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                  </svg>
-                </div>
-                <span class="edu-status-badge completed">Graduated</span>
-              </div>
-
-              <h3 class="edu-institution">Sohag University</h3>
-              <p class="edu-degree">Bachelor's Degree in Computer Science &amp; Artificial Intelligence</p>
-
-              <div class="edu-meta">
-                <span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                  </svg>
-                  October 2021 &ndash; June 2025
-                </span>
-                <span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                  Sohag, Egypt
-                </span>
-              </div>
-            </div>
-
-            <div class="edu-details">
-              Deep foundational computer science curriculum covering algorithms, data structures, software engineering, databases, object-oriented design, machine learning fundamentals, and collaborative graduation project development.
-            </div>
-          </article>
-
-        </div>
-
-        <!-- Verified Achievements Sub-Section -->
-        <div class="achievements-wrapper">
-          <div class="section-header" style="margin-bottom: 2rem;">
-            <span class="section-label">Milestones</span>
-            <h3 style="font-size: 1.75rem;">Key Achievements</h3>
-          </div>
-
-          <div class="achievements-grid">
-            
-            <!-- Achievement 1: ECPC -->
-            <div class="achievement-card">
-              <div class="achievement-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                  <path d="M4 22h16"></path>
-                  <path d="M10 14.66V17c0 .55-.45 1-1 1H7v2h10v-2h-2c-.55 0-1-.45-1-1v-2.34c3-.55 5-3.03 5-6.66H6c0 3.63 2 6.11 5 6.66z"></path>
-                </svg>
-              </div>
-              <div class="achievement-content">
-                <span class="achievement-stat">ECPC '23</span>
-                <h4 class="achievement-title">Contest Participant</h4>
-                <p class="achievement-desc">Participant in the Egyptian Collegiate Programming Contest (ECPC) 2023, competing in algorithmic problem-solving under strict timing.</p>
-              </div>
-            </div>
-
-            <!-- Achievement 2: Codeforces -->
-            <div class="achievement-card">
-              <div class="achievement-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-              <div class="achievement-content">
-                <span class="achievement-stat">500+</span>
-                <h4 class="achievement-title">Codeforces Problems Solved</h4>
-                <p class="achievement-desc">Solved 500+ algorithmic and data-structure problems on Codeforces, developing strong analytical thinking, space/time optimization, and mathematical rigor.</p>
-              </div>
-            </div>
-
-            <!-- Achievement 3: LeetCode SQL -->
-            <div class="achievement-card">
-              <div class="achievement-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                </svg>
-              </div>
-              <div class="achievement-content">
-                <span class="achievement-stat">50+</span>
-                <h4 class="achievement-title">LeetCode SQL Problems</h4>
-                <p class="achievement-desc">Solved 50+ complex SQL problems on LeetCode covering multi-table joins, subqueries, window functions, and relational optimization.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         Contact Section
-         ======================================================================== -->
-    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-label">Get in Touch</span>
-          <h2 id="contact-title" class="section-title">Let's Build Something Together.</h2>
-          <p class="section-description">Have an opportunity, a project idea, or just want to connect? I'd be happy to hear from you.</p>
-        </div>
-
-        <div class="contact-grid">
-          
-          <!-- Contact Direct Info Panel -->
-          <div class="contact-info-panel">
-            <p class="contact-lead">
-              Feel free to reach out via email, phone, or LinkedIn. I am always open to exploring full-time software engineering roles, impactful internships, and technical discussions.
-            </p>
-
-            <div class="contact-cards-stack">
-              
-              <!-- Email Card -->
-              <div class="contact-item-card">
-                <div class="contact-item-left">
-                  <div class="contact-item-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                      <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                  </div>
-                  <div class="contact-item-text">
-                    <span class="contact-item-label">Email</span>
-                    <a href="mailto:christineadib8@gmail.com" class="contact-item-value">christineadib8@gmail.com</a>
-                  </div>
-                </div>
-                <button type="button" class="btn-copy" data-copy="christineadib8@gmail.com" aria-label="Copy email address to clipboard">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                  </svg>
-                  <span>Copy</span>
-                </button>
-              </div>
-
-              <!-- Phone Card -->
-              <div class="contact-item-card">
-                <div class="contact-item-left">
-                  <div class="contact-item-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                  </div>
-                  <div class="contact-item-text">
-                    <span class="contact-item-label">Phone</span>
-                    <a href="tel:+201031034795" class="contact-item-value">01031034795</a>
-                  </div>
-                </div>
-                <button type="button" class="btn-copy" data-copy="01031034795" aria-label="Copy phone number to clipboard">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                  </svg>
-                  <span>Copy</span>
-                </button>
-              </div>
-
-              <!-- Location Card -->
-              <div class="contact-item-card">
-                <div class="contact-item-left">
-                  <div class="contact-item-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                  </div>
-                  <div class="contact-item-text">
-                    <span class="contact-item-label">Location</span>
-                    <span class="contact-item-value">Sohag, Egypt</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Profiles Card -->
-              <div class="contact-item-card">
-                <div class="contact-item-left">
-                  <div class="contact-item-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="2" y1="12" x2="22" y2="12"></line>
-                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                    </svg>
-                  </div>
-                  <div class="contact-item-text">
-                    <span class="contact-item-label">Profiles</span>
-                    <div style="display: flex; gap: 0.85rem; margin-top: 0.25rem;">
-                      <a href="https://linkedin.com/in/christine-adib-82bb03282" target="_blank" rel="noopener noreferrer" style="color: var(--accent-hover); font-weight: 600; font-size: 0.9rem; text-decoration: underline;">LinkedIn</a>
-                      <span style="color: var(--border-color);">&bull;</span>
-                      <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" style="color: var(--accent-hover); font-weight: 600; font-size: 0.9rem; text-decoration: underline;">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Interactive Contact Form -->
-          <div class="contact-form-card">
-            <div class="form-header">
-              <h3>Send a Message</h3>
-              <p>Fill out the details below to open a formatted email draft directly to my inbox.</p>
-            </div>
-
-            <form id="contact-form" class="contact-form" novalidate>
-              
-              <div id="form-status" class="form-status-banner" role="alert" aria-live="polite"></div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="user-name" class="form-label">Your Name <span class="required">*</span></label>
-                  <input type="text" id="user-name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
-                </div>
-                <div class="form-group">
-                  <label for="user-email" class="form-label">Your Email <span class="required">*</span></label>
-                  <input type="email" id="user-email" name="email" class="form-input" placeholder="e.g. sarah@example.com" required>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="user-subject" class="form-label">Subject <span class="required">*</span></label>
-                <input type="text" id="user-subject" name="subject" class="form-input" placeholder="e.g. Full-Stack .NET Opportunity / Collaboration" required>
-              </div>
-
-              <div class="form-group">
-                <label for="user-message" class="form-label">Message <span class="required">*</span></label>
-                <textarea id="user-message" name="message" class="form-textarea" placeholder="Hello Christine, I came across your portfolio and would love to discuss..." required></textarea>
-                <span class="form-hint">Note: Submitting launches your default email client with your message pre-populated.</span>
-              </div>
-
-              <button type="submit" class="btn-submit">
+              <button type="submit" class="btn-get-in-touch" style="margin-top: 0.5rem;">
                 <span>Send Message</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="22" y1="2" x2="11" y2="13"></line>
                   <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
               </button>
-
             </form>
           </div>
 
@@ -1012,76 +917,24 @@
   </main>
 
   <!-- ==========================================================================
-       Site Footer
+       Footer (Matching Exact Build • Learn • Grow ♡ Tagline)
        ========================================================================== -->
   <footer class="site-footer" role="contentinfo">
-    <div class="container">
+    <div class="container footer-inner-flex">
       
-      <div class="footer-top">
-        <div class="footer-brand">
-          <h4>Christine Adib</h4>
-          <p>Full-Stack .NET &amp; Angular Developer dedicated to clean architecture, reliable software engineering, and high-quality user experiences.</p>
-          <div style="display: flex; gap: 0.65rem;">
-            <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </a>
-            <a href="https://linkedin.com/in/christine-adib-82bb03282" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a href="mailto:christineadib8@gmail.com" class="social-link" aria-label="Email Christine">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </a>
-            <a href="tel:+201031034795" class="social-link" aria-label="Call Christine">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-column">
-          <h5>Quick Navigation</h5>
-          <div class="footer-links">
-            <a href="#home" class="footer-link">Home</a>
-            <a href="#about" class="footer-link">About</a>
-            <a href="#skills" class="footer-link">Skills</a>
-            <a href="#projects" class="footer-link">Projects</a>
-            <a href="#experience" class="footer-link">Experience</a>
-            <a href="#education" class="footer-link">Education &amp; Achievements</a>
-          </div>
-        </div>
-
-        <div class="footer-column">
-          <h5>Direct Contact</h5>
-          <div class="footer-links">
-            <a href="mailto:christineadib8@gmail.com" class="footer-link">christineadib8@gmail.com</a>
-            <a href="tel:+201031034795" class="footer-link">01031034795</a>
-            <span class="footer-link" style="color: var(--text-muted);">Sohag, Egypt</span>
-            <a href="https://linkedin.com/in/christine-adib-82bb03282" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn Profile &nearr;</a>
-            <a href="https://github.com/ChristineAdib" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile &nearr;</a>
-          </div>
-        </div>
+      <!-- Copyright -->
+      <div>
+        &copy; <span id="copyright-year">2026</span> Christine Adib. All rights reserved.
       </div>
 
-      <div class="footer-bottom">
-        <div>
-          &copy; <span id="copyright-year">2026</span> Christine Adib. All rights reserved.
-        </div>
-        <button id="back-to-top" class="btn-back-to-top" type="button" aria-label="Scroll back to top of page">
-          <span>Back to Top</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="18 15 12 9 6 15"></polyline>
-          </svg>
-        </button>
+      <!-- Script Tagline from Reference Mockup -->
+      <div class="footer-script-tagline">
+        <span>Build</span>
+        <span>•</span>
+        <span>Learn</span>
+        <span>•</span>
+        <span>Grow</span>
+        <span class="heart">♡</span>
       </div>
 
     </div>
