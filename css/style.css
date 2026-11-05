@@ -593,13 +593,26 @@ img, svg {
   max-width: 520px;
   height: 440px;
   border-radius: 260px 260px 40px 40px;
-  background: linear-gradient(145deg, #DCE5DE 0%, #D1DCD4 40%, #EFE8DC 100%);
+  background-color: #E6EFE8;
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+}
+
+.hero-arch-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 260px 260px 40px 40px;
+  transition: transform var(--transition);
+}
+
+.hero-arch-card:hover .hero-arch-img {
+  transform: scale(1.03);
 }
 
 /* Floating Decorative Sparkles */
@@ -608,6 +621,7 @@ img, svg {
   color: var(--terracotta);
   pointer-events: none;
   animation: floatSparkle 4s ease-in-out infinite alternate;
+  z-index: 5;
 }
 .sparkle-1 { top: 38px; right: 50px; font-size: 26px; }
 .sparkle-2 { top: 90px; left: 35px; font-size: 20px; animation-delay: 1.5s; }
@@ -617,21 +631,17 @@ img, svg {
   100% { transform: translateY(-8px) scale(1.1); opacity: 1; }
 }
 
-/* SVG Scene Container inside Arch */
-.arch-scene-svg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Left botanical accent leaf on page */
+/* Left botanical accent tree leaves on page (ورق شجر حقيقي) */
 .page-leaf-left {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 120px;
+  bottom: -20px;
+  left: -25px;
+  width: 190px;
+  max-width: 42vw;
   pointer-events: none;
-  opacity: 0.85;
+  z-index: 2;
+  filter: drop-shadow(0 8px 18px rgba(40, 30, 20, 0.12));
+  transform: rotate(-10deg);
 }
 
 /* ==========================================================================
@@ -666,27 +676,25 @@ img, svg {
   width: 130px;
   height: 180px;
   border-radius: 70px 70px 18px 18px;
-  background: linear-gradient(160deg, #EADDCF 0%, #D8C6B3 100%);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-medium);
   box-shadow: var(--shadow-xs);
   flex-shrink: 0;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 
-.about-thumb-inner {
+.about-thumb-img {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-title);
-  padding: 0.5rem;
-  text-align: center;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 70px 70px 18px 18px;
+  transition: transform var(--transition);
+}
+
+.about-arch-thumb:hover .about-thumb-img {
+  transform: scale(1.05);
 }
 
 .about-text-content {
@@ -1099,24 +1107,27 @@ img, svg {
   margin-bottom: 2.5rem;
 }
 
-/* Organic leaf decorative silhouettes on sides */
+/* Organic real tree leaves in banner */
 .connect-leaf-left {
   position: absolute;
-  top: 10px;
-  left: 0;
-  width: 90px;
-  opacity: 0.35;
+  top: -20px;
+  left: -25px;
+  width: 150px;
+  opacity: 0.85;
   pointer-events: none;
+  transform: rotate(35deg);
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.35));
 }
 
 .connect-leaf-right {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 110px;
-  opacity: 0.35;
+  bottom: -25px;
+  right: -25px;
+  width: 160px;
+  opacity: 0.85;
   pointer-events: none;
-  transform: rotate(180deg);
+  transform: rotate(215deg);
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.35));
 }
 
 .connect-wave-grid {
