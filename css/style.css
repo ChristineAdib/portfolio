@@ -631,19 +631,6 @@ img, svg {
   100% { transform: translateY(-8px) scale(1.1); opacity: 1; }
 }
 
-/* Left botanical accent tree leaves on page (ورق شجر حقيقي) */
-.page-leaf-left {
-  position: absolute;
-  bottom: -20px;
-  left: -25px;
-  width: 190px;
-  max-width: 42vw;
-  pointer-events: none;
-  z-index: 2;
-  filter: drop-shadow(0 8px 18px rgba(40, 30, 20, 0.12));
-  transform: rotate(-10deg);
-}
-
 /* ==========================================================================
    About Me & My Skills Section (Side-by-Side Cards from Reference)
    ========================================================================== */
