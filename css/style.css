@@ -877,7 +877,7 @@ img, svg {
 /* Projects Grid */
 .projects-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 1.75rem;
 }
 
@@ -1022,7 +1022,7 @@ img, svg {
 
 .credentials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 1.75rem;
 }
 
@@ -1332,6 +1332,12 @@ img, svg {
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
+/* ==========================================================================
+   Comprehensive Responsive System
+   Ensures 100% responsiveness across Desktop, Laptop, Tablet, and Mobile
+   ========================================================================== */
+
+/* 1. Large Tablet / Small Laptop (1024px) */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1342,6 +1348,7 @@ img, svg {
   }
   .about-skills-grid {
     grid-template-columns: 1fr;
+    gap: 2.25rem;
   }
   .connect-wave-grid {
     grid-template-columns: 1fr;
@@ -1359,7 +1366,17 @@ img, svg {
   }
 }
 
+/* 2. Tablet Portrait (768px) */
 @media (max-width: 768px) {
+  :root {
+    --header-height: 74px;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  /* Mobile Navigation Drawer */
   .mobile-nav-toggle {
     display: flex;
   }
@@ -1370,16 +1387,19 @@ img, svg {
     left: 0;
     right: 0;
     background-color: var(--bg-card);
-    border-bottom: 1px solid var(--border-medium);
-    padding: 1.5rem;
+    border-bottom: 2px solid var(--border-medium);
+    padding: 1.25rem 1.5rem 2rem 1.5rem;
     flex-direction: column;
     align-items: stretch;
-    gap: 0.5rem;
+    gap: 0.6rem;
     box-shadow: var(--shadow-lg);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity var(--transition-fast), transform var(--transition-fast);
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+    z-index: 1000;
   }
 
   .nav-menu.is-open {
@@ -1388,61 +1408,221 @@ img, svg {
     transform: translateY(0);
   }
 
+  .nav-link {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: var(--radius-sm);
+  }
+
   .btn-lets-talk {
     display: none;
   }
 
   .hero-name {
-    font-size: 2.85rem;
+    font-size: clamp(2.6rem, 8vw, 3.25rem);
   }
 
+  /* About Card Layout on Tablet: Centered Arched Photo */
   .about-card-inner {
     flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .about-arch-thumb {
+    width: 140px;
+    height: 180px;
+    border-radius: 70px 70px 18px 18px;
+    margin: 0 auto;
+  }
+
+  .about-thumb-img {
+    border-radius: 70px 70px 18px 18px;
+  }
+
+  .about-text-content {
     width: 100%;
-    height: 120px;
-    border-radius: var(--radius-md);
   }
 
+  /* Wave Banner Padding */
   .connect-wave-container {
-    padding: 2.25rem 1.75rem;
-    border-radius: 32px 32px 18px 18px;
+    padding: 2.5rem 1.75rem;
+    border-radius: 36px 36px 20px 20px;
   }
 
-  .connect-form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .connect-textarea {
-    grid-column: span 1;
+  .connect-leaf-left,
+  .connect-leaf-right {
+    width: 100px;
+    opacity: 0.5;
   }
 }
 
+/* 3. Small Tablet & Large Mobile (640px) */
+@media (max-width: 640px) {
+  .section-title,
+  .projects-title-group h2,
+  .heading-text {
+    font-size: 1.65rem;
+  }
+
+  .projects-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .projects-divider-line {
+    display: none;
+  }
+
+  .btn-view-all-projects {
+    align-self: flex-start;
+  }
+
+  .projects-cards-grid,
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-card,
+  .project-mockup-card,
+  .about-card,
+  .skills-card {
+    padding: 1.5rem;
+  }
+}
+
+/* 4. Standard Mobile Phones (480px) */
 @media (max-width: 480px) {
+  .container {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+
+  .hero-section {
+    padding-top: 2.75rem;
+    padding-bottom: 3.5rem;
+  }
+
   .hero-name {
     font-size: 2.35rem;
+    word-break: break-word;
+  }
+
+  .hero-tagline {
+    font-size: 0.925rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+    width: 100%;
   }
 
   .btn-hero-primary,
   .btn-hero-secondary {
     width: 100%;
     justify-content: center;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .hero-social-pills {
+    justify-content: center;
+    width: 100%;
   }
 
   .hero-arch-card {
-    height: 360px;
+    height: clamp(280px, 75vw, 360px);
+    border-radius: 180px 180px 28px 28px;
+  }
+
+  .hero-arch-img {
+    border-radius: inherit;
+  }
+
+  /* Form Grid Stacking */
+  .connect-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .connect-input,
+  .connect-textarea {
+    grid-column: span 1 !important;
+    font-size: 16px; /* Prevents iOS Safari zoom */
+  }
+
+  .btn-get-in-touch {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .connect-leaf-left,
+  .connect-leaf-right {
+    display: none; /* Hide foliage on narrow screens to avoid crowding */
+  }
+
+  .connect-wave-container {
+    padding: 2rem 1.15rem;
+    border-radius: 28px 28px 16px 16px;
+  }
+
+  .connect-title {
+    font-size: 1.95rem;
+  }
+
+  .connect-line-item {
+    font-size: 0.85rem;
+    word-break: break-all;
   }
 
   .footer-inner-flex {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* 5. Extra Small Mobile Screens (380px and below) */
+@media (max-width: 380px) {
+  .brand-link {
+    gap: 0.65rem;
+  }
+
+  .brand-monogram-text {
+    font-size: 1.85rem;
+  }
+
+  .brand-sparkle-star {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .brand-name {
+    font-size: 0.975rem;
+  }
+
+  .brand-role {
+    display: none; /* Keeps header neat on small screen */
+  }
+
+  .brand-divider {
+    height: 22px;
+  }
+
+  .skills-squircles-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.65rem;
+  }
+
+  .skill-squircle {
+    padding: 0.75rem 0.35rem;
+    min-height: 76px;
+  }
+
+  .squircle-label {
+    font-size: 0.725rem;
   }
 }
